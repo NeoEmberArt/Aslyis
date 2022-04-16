@@ -1,9 +1,27 @@
+##############################################################################
+#Version 2
+# whats new:
+# • Set-up no longer moves the armature
+# • When you click "Setup"
+#     -  You are put the frame 1 (or start frame)
+#     -  A keyframe is applied to the driver/first empty
+# • Bake
+#     -  The movement is perfect and all bugs have been fixed (Start jitter, Control/Driver name [no longer needed, automatically added], modifiers set to wrong object)
+#     -  Keyframe Offset works now (Subdivisions doesn't yet but will soon)
+# • Faster calculation meaning you can bake in around 6 seconds or less with 250 frames (based on testing with an MSI GL65 Leopard)
+# • Random bug found when selected a few bones with diferent or random names. May or may not be fixed
+# • UI bug fixed (Number inputs are now integers rather than floats)
+# • Tutorial/Documentation created
+# • Variable names finalized
+# • Baking now bakes from the start frame till the end rather than frame 0
+# • Comments added everywhere
+###############################################################################
 bl_info = {
     "name": "SnakeMotion",
     "description": "Create a serptent animation faster than ever",
     "author": "NeoEmberArts",
     "version": (1, 2),
-    "blender": (2, 9, 0),
+    "blender": (3, 0, 0),
     "location": "View 3D > Properties Panel",
     "doc_url": "hhttps://github.com/NeoEmberArt/Aslyis/blob/main/Addons/SnakeMotionTutorial.md",
     "tracker_url": "https://github.com/NeoEmberArt/Aslyis/issues",
