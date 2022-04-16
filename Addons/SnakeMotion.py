@@ -23,12 +23,11 @@ bl_info = {
     "version": (1, 2),
     "blender": (3, 0, 0),
     "location": "View 3D > Properties Panel",
-    "doc_url": "hhttps://github.com/NeoEmberArt/Aslyis/blob/main/Addons/SnakeMotionTutorial.md",
+    "doc_url": "https://github.com/NeoEmberArt/Aslyis/blob/main/Addons/SnakeMotionTutorial.md",
     "tracker_url": "https://github.com/NeoEmberArt/Aslyis/issues",
     "support": "COMMUNITY",
     "category": "Animation",
 }
-
 # Libraries
 import bpy
 from bpy.props import BoolProperty, FloatProperty, IntProperty, PointerProperty
