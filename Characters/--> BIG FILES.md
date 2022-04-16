@@ -1,4 +1,4 @@
-# File donwload links
+# File download links via Mediafire
 []()
 * [Frazore.blend](https://www.mediafire.com/file/u9drdl4exmnb1u2/FRAZORe.blend/file)
 * [ChaddethFrazor2.blend](https://www.mediafire.com/file/4lm8p52gdlofgr7/ChaddethFrazor2.blend/file)
