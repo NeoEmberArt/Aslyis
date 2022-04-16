@@ -1,13 +1,17 @@
 # Snake Motion
-SnakeMotion is a blender addon to make animating snakes easy and fast (no kidding, it cant be easier)
+With [SnakeMotion](https://raw.githubusercontent.com/NeoEmberArt/Aslyis/main/Addons/SnakeMotion.py), you can easily and quickly make a snake slither with a few clicks and animating just **1** object. (it cant get easier than this)
 
 ## How to use
-* *Select an armature* and go into *pose mode*
-* select some or all of the bones
-* Bones not selected will allow you manual animation of
-* Make sure the root bone/Bone that moves the whole armature is selected
-* click **Setup**
-* The empty selected is the controler/driver
-* Animate the selected empty however you like
-* Once done, jusy click **Bake** and the rest will be handeled in around 6-7 secconds (based on 250 frames)
-* Enjoy the perfect slither
+* ***Select an armature*** and go into pose mode
+* ***Select the bones*** you want to use (perferably all)
+	* Bones that arent selected will be avalable for manual animating
+	* Make sure the root bone (bone that will move the entire armature) is selected or the armature will not move
+* Click **Setup**
+* The empty that is selected will be the Controller/driver. A keyframe is allready added
+* ***Animate the empty***
+* Click **Bake**
+* Watch your masterpeice slither
+
+> **ProTip:** Selecting all bones in an armature can help reduce the chance of an error, Bones must also stay as a single line; If it splits: you may blow up the snake
+
+###### Part of project [Asylis](https://github.com/NeoEmberArt/Aslyis)
