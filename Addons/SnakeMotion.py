@@ -272,12 +272,11 @@ class SNAKE_OT_Create(Operator):
     @classmethod
     def poll(cls, context) -> bool:
         return (bpy.context.mode == "OBJECT") and wassetup
-
     def execute(self, context):
-	    global nodes
-	    global objects
-	    nodes = []
-	    objects = []
+        global nodes
+        global objects
+        nodes = []
+        objects = []
         #get settings
         keyframe_frequency_setting = context.scene.snakeAnim.keyframe_frequency_setting
         frame_subdivisions = context.scene.snakeAnim.frame_subdivisions
