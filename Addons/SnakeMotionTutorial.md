@@ -4,7 +4,7 @@ With [SnakeMotion](https://raw.githubusercontent.com/NeoEmberArt/Aslyis/main/Add
 ## Instalation
 * Dowload SnakeMotion.py
 * Go to Edit > Preferences > Addons > Install
-* Select the addon after after install, activate it 
+* Select the addon. After install, activate it 
 
 ## How to use
 * ***Select an armature*** and go into pose mode
