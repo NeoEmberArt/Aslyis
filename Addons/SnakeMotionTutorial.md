@@ -1,6 +1,11 @@
 # Snake Motion
 With [SnakeMotion](https://raw.githubusercontent.com/NeoEmberArt/Aslyis/main/Addons/SnakeMotion.py), you can easily and quickly make a snake slither with a few clicks and animating just **1** object. (it cant get easier than this)
 
+## Instalation
+* Dowload SnakeMotion.py
+* Go to Edit > Preferences > Addons > Install
+* Select the addon after after install, activate it 
+
 ## How to use
 * ***Select an armature*** and go into pose mode
 * ***Select the bones*** you want to use (perferably all)
@@ -12,6 +17,6 @@ With [SnakeMotion](https://raw.githubusercontent.com/NeoEmberArt/Aslyis/main/Add
 * Click **Bake**
 * Watch your masterpeice slither
 
-> **ProTip:** Selecting all bones in an armature can help reduce the chance of an error, Bones must also stay as a single line; If it splits: you may blow up the snake
+> **ProTip:** SBones must stay as a single line; If it splits/branches: you may get some funky results
 
 ###### Part of project [Asylis](https://github.com/NeoEmberArt/Aslyis)
