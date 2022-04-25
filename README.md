@@ -17,7 +17,7 @@ This machine was built by two men, but it was "accidentally" triggered by one du
 
 It took 15 years for someone named "Frazor" to exploit the Crixen by entering what is known as "Zero Infinity." He was able to create an exit by doing so, but he did not come out the same; he was given a massive amount of power that was too much to contain, so he hid himself, placing a lot of his power in three random creatures to reduce the amount he emits; one of these creatures gave him eyes on the outside world, some might even say that it is possession due to the fact that frazor can take control of the creature at will
 
-Enith escapes after the crixen informs him that Frazor has done likewise. Enith was completely different when he awoke; his mind had been shattered into pieces, so he became power hungry and set out to find Frazor, killing anybody who stood in his way.
+Enith escapes after the crixen informs him that Frazor has done likewise. Enith was completely different when he awoke; his mind had shattered and placed back together making him insane. He became power hungry and set out to find Frazor, killing anybody who stood in his way.
 
 Enith's goal with this power is unclear, although it does have something to do with the crixen.
 
