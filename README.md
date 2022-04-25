@@ -11,7 +11,7 @@ Asylis is a mix of the "Pokemon Adventures" comic, "the story of oviox", and the
 The story starts at a lab called "Dorean Labs". There lies experiments that are highly dangerous, the most important and relavent one is the **Crixen**
 ![image](https://user-images.githubusercontent.com/78153143/165166011-22df5f9e-6d72-4e52-8d70-90881534d708.png)
 
-The crixen is a strong electromagnetic gate that, via a controlled wormhole, provides a doorway between other universes.
+The crixen is a strong electromagnetic gate that, via a controlled wormhole, provides a doorway between universes.
 
 This machine was built by two men, but it was "accidentally" triggered by one dubbed "Enith."
 
