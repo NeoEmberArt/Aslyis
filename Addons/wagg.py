@@ -3,7 +3,7 @@ bl_info = {
     "description": "WAG!!!",
     "author": "NeoEmberArts",
     "version": (1, 0),
-    "blender": (2, 9, 0),
+    "blender": (3, 0, 0),
     "location": "View 3D > Properties Panel",
     "doc_url": "",
     "tracker_url": "",
