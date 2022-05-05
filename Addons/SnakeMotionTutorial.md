@@ -14,10 +14,14 @@ With [SnakeMotion](https://raw.githubusercontent.com/NeoEmberArt/Aslyis/main/Add
 * Click **Setup**
 * The empty that is selected will be the Controller/driver. A keyframe is allready added
 * ***Animate the empty***
+  * You can also set certain settings such as
+    * Frame range (Only use a certain range of frames when baking)
+    * Animated (Turn the calculation on or off at certain frames for use of ragdoll - experimental)
+    * Keyframe Frequency (How often snakeMotion will add a keyframe - every x frames)
 * Click **Bake**
 * Watch your masterpiece slither
 
-> **ProTip:** Bones must stay as a single line; If it splits/branches, you may get some funky results
+> **ProTip:** Bones must stay as a single line; If it splits/branches, you MAY get some funky results
 
 # Common issues
 ### Bones are rotating but the armature is not moving
@@ -37,6 +41,16 @@ With [SnakeMotion](https://raw.githubusercontent.com/NeoEmberArt/Aslyis/main/Add
 - Time varies and unfortunately it's unavoidable in the current version of SnakeMotion
 ### I keep getting sharp corner movements
 - Cant be fixed yet, My suggestion is more bones or less sharp turning
+### It wont let me setup my armature
+- Things to ask yourself
+  - Am i in pose mode?
+  - Do i have 2+ bones?
+  - Is it allready setup? (Click cancel if so)
+    - Issue with cancel is that the empties, if any, will stay hidden and exist, along with any contraints added to the armature
+    - Just use **a** then use **alt** + **h** to unhide all of them
+### The empties are stretching
+- No fix yet, I suggest moving slower
+- The reason this is happening is because the empty is moving more than the distance between two bones and SnakeMotion cant keep up
 ### I got an error
 - Great, report it and I will investigate
 ### How do i report an error?
