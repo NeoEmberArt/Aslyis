@@ -1,27 +1,18 @@
 ##############################################################################
-#Version 2
+#Version 3
 # whats new:
-# • Set-up no longer moves the armature
-# • When you click "Setup"
-#     -  You are put the frame 1 (or start frame)
-#     -  A keyframe is applied to the driver/first empty
-# • Bake
-#     -  The movement is perfect and all bugs have been fixed (Start jitter, Control/Driver name [no longer needed, automatically added], modifiers set to wrong object)
-#     -  Keyframe Offset works now (Subdivisions doesn't yet but will soon)
-# • Faster calculation meaning you can bake in around 6 seconds or less with 250 frames (based on testing with an MSI GL65 Leopard)
-# • Random bug found when selected a few bones with diferent or random names. May or may not be fixed
-# • UI bug fixed (Number inputs are now integers rather than floats)
-# • Tutorial/Documentation created
-# • Variable names finalized
-# • Baking now bakes from the start frame till the end rather than frame 0
-# • Comments added everywhere
-# • Data reset after use
+# • Use a set frame range
+# • Animate whether or not the calculation should run - keyframeable value
+# • UI changes
+# • Unused settings removed
+# • Fixed a rare "divide by zero" error
+# • Performance update
 ###############################################################################
 bl_info = {
     "name": "SnakeMotion",
     "description": "Create a serptent animation faster than ever",
     "author": "NeoEmberArts",
-    "version": (1, 2),
+    "version": (1, 3),
     "blender": (3, 0, 0),
     "location": "View 3D > Properties Panel",
     "doc_url": "https://github.com/NeoEmberArt/Aslyis/blob/main/Addons/SnakeMotionTutorial.md",
@@ -62,10 +53,19 @@ def init(name):
     objects.append(str(name))
     nodes.insert(0, [bpy.data.objects[name].location.x, bpy.data.objects[name].location.y, bpy.data.objects[name].location.z])
     #if there are enough objects calculate the distance Rate
-    if len(nodes) == 3:
+    if len(nodes) == 3: #?
         distanceRate = distance([nodes[0][0],nodes[0][1],nodes[0][2]],[nodes[1][0],nodes[1][1],nodes[1][2]], False)
- 
- 
+    # if len(nodes) > 1 and subdivision > 1 and iteration < len(ctrlN)-2:
+    #     for tr in range(1, int(distanceRate/(distanceRate/2.00**subdivision) - 2)):
+    #         inc = (distanceRate*subdivision) / 2 ** subdivision
+    #         objects.append("phantom")
+    #         nodes.insert(0,[
+    #             nodes[len(nodes)-2][0] + (inc * tr),
+    #             nodes[len(nodes)-2][1] + (inc * tr),
+    #             nodes[len(nodes)-2][2] + (inc * tr)
+    #         ])
+    # iteration = iteration + 1
+
 #distance between 3 or 1 vector positions
 def distance(v1, v2, single):
     if single:
@@ -73,17 +73,22 @@ def distance(v1, v2, single):
     else:
         return math.sqrt(((v2[0] - v1[0])**2) + ((v2[1] - v1[1])**2) + ((v2[2] - v1[2])**2))
  
-           
-                                               
 #used to calculate the distance to travel based on the heads position. Set position reletive to the control
-def CalcDist3D(control, node):
+def CalcDist3D(control, node): #DOES NOT DO WELL WITH 0/0
     global nodes
+    mp = 0
+    if getMouseProg(control) == 0:
+        mp = 0
+    elif distanceRate == 0:
+        mp = 0
+    else:
+        mp = (getMouseProg(control))/distanceRate
     current = nodes[node]
     #dist = [distance(control[0], nodes[len(nodes)-1][0], True), distance(control[1], nodes[len(nodes)-1][1], True), distance(control[2], nodes[len(nodes)-1][2], True)];
     return [
-        nodes[node-1][0] + ((nodes[node][0] - nodes[node-1][0]) * (getMouseProg(control))/distanceRate),
-         nodes[node-1][1] + ((nodes[node][1] - nodes[node-1][1]) * (getMouseProg(control))/distanceRate),
-          nodes[node-1][2] + ((nodes[node][2] - nodes[node-1][2]) * (getMouseProg(control))/distanceRate)
+        nodes[node-1][0] + ((nodes[node][0] - nodes[node-1][0]) * mp),
+         nodes[node-1][1] + ((nodes[node][1] - nodes[node-1][1]) * mp),
+          nodes[node-1][2] + ((nodes[node][2] - nodes[node-1][2]) * mp)
         ]
    
 #get head/control progress/percentage it is to reaching the distanceRate
@@ -122,18 +127,50 @@ class SnakeMotionPT(Panel):
         col = layout.column(align=True)
         row = layout.row(align=True)
         row.scale_y = 1.5
-        col.operator("animation.setup", text="SETUP", icon="SEQ_CHROMA_SCOPE")
-        col.prop(settings, 'keyframe_frequency_setting')
-        col.prop(settings, 'frame_subdivisions')
-        layout.use_property_split = True
-        layout.use_property_decorate = False
-        flow = layout.grid_flow(row_major=True, columns=0, even_columns=False, even_rows=False, align=True)
-        col = flow.column()
-        row = layout.row(align=True)
-        row.scale_y = 1.5
-        row.operator("animation.unhide", text="Unhide", icon="HIDE_OFF")
-        row.operator("animation.create", text="BAKE", icon="SEQ_LUMA_WAVEFORM")
+        #col.operator("animation.cancel", text="LOG", icon="CANCEL")
+        if wassetup:
+            col.operator("animation.cancel", text="CANCEL", icon="CANCEL")
+            col.label(text="Settings")
+            col.prop(settings, 'keyframe_frequency_setting')
+            #col.prop(settings, 'frame_subdivisions')
+            col.label(text="Automation")
+            col.prop(settings, 'cr')
+            if context.scene.snakeAnim.cr:
+                col.prop(settings, 'running')
+            col.label(text="Frame Range")
+            col.prop(settings, 'frr')
+            if context.scene.snakeAnim.frr:
+                row.prop(settings, 'fromm')
+                row.prop(settings, 'to')
+            layout.use_property_split = True
+            layout.use_property_decorate = False
+            flow = layout.grid_flow(row_major=True, columns=0, even_columns=False, even_rows=False, align=True)
+            col = flow.column()
+            row = layout.row(align=True)
+            row.scale_y = 1.5
+            col.label(text="Actions")
+            row.operator("animation.unhide", text="Unhide", icon="HIDE_OFF")
+            row.operator("animation.create", text="BAKE", icon="SEQ_LUMA_WAVEFORM")
+        else:
+            col.label(text="Setup")
+            col.operator("animation.setup", text="SETUP", icon="SEQ_CHROMA_SCOPE")
 #Setup Button
+class snakeCancel(Operator):
+    bl_idname = "animation.cancel"
+    bl_label = "Cancel Setup"
+    bl_description = "Cancel the Setup Process - not recommended"
+    bl_options = {'REGISTER', 'UNDO'}
+    @classmethod
+    def poll(cls, context) -> bool:
+        return True
+    def execute(self, context):
+        # print(objects)
+        # print(nodes)
+        # print(distanceRate)
+        global wassetup
+        wassetup = False
+        self.report({'INFO'}, 'Canceled Setup - Empties may still be hidden')
+        return {'FINISHED'}
 class SNAKE_OT_Setup(Operator):
     bl_idname = "animation.setup"
     bl_label = "setup for Animation"
@@ -216,6 +253,7 @@ class SNAKE_OT_Setup(Operator):
         for w in range(len(ctrlN)):
             if (w != len(ctrlN)-1):
                 bpy.data.objects[ctrlN[w]].scale = (0,0,0)
+        self.report({'INFO'}, 'Setup complete')
         return {'FINISHED'}
 
 #button to undide all the empties
@@ -232,32 +270,38 @@ class SNAKE_OT_Unhide(Operator):
         objectsHidden = False
         for x in ctrlN:
             bpy.data.objects[x].scale = (1,1,1)
+        self.report({'INFO'}, 'Showing all empties')
         return {'FINISHED'}
 #bake the movement by using the function i made. 5+ weeks to get it perfect; Original code hosted here using JS: https://studio.code.org/projects/applab/LQglV4YzaiBRxzp6lHQ3vHNv7kU4Zu5BAJUySyigr4c     
 def bake(keyframefreq, subdiv):
     #go to first frame
-    bpy.context.scene.frame_current = bpy.context.scene.frame_start
+    s = bpy.context.scene.frame_start
+    f = bpy.context.scene.frame_end
+    if bpy.context.scene.snakeAnim.frr:
+        s = bpy.context.scene.snakeAnim.fromm
+        f = bpy.context.scene.snakeAnim.to + 1
+    bpy.context.scene.frame_current = s
     bpy.context.scene.frame_set(bpy.context.scene.frame_current)
-    #Go through each frame from start to end
-    for i in range(bpy.context.scene.frame_start,bpy.context.scene.frame_end):
-        global nodes
-        global objects
-        #get control position
-        mouse = [bpy.data.objects[controlPoint].location.x, bpy.data.objects[controlPoint].location.y, bpy.data.objects[controlPoint].location.z]
-        if distance(
-            [mouse[0], mouse[1], mouse[2]],
-              [nodes[len(nodes)-1][0], nodes[len(nodes)-1][1], nodes[len(nodes)-1][2]],
-                False
-        ) >= distanceRate:
-            # add a new node if the control has moved the distance between two nodes
-            nodes.append([mouse[0], mouse[1], mouse[2]])
-            #Use "Pooling" to remove unused data to keep things fast
-            if len(nodes) > len(objects)+1:
-                del nodes[0]
-        #go through each object and move them
-        for x in range(0, len(objects)):
-            move(objects[x],CalcDist3D([mouse[0], mouse[1], mouse[2]],(len(nodes) - 1) - x), keyframefreq, x)
-        #go to the next frame
+    for i in range(s,f):
+        if (bpy.context.scene.snakeAnim.running or bpy.context.scene.snakeAnim.cr == False):
+            global nodes
+            global objects
+            #get control position
+            mouse = [bpy.data.objects[controlPoint].location.x, bpy.data.objects[controlPoint].location.y, bpy.data.objects[controlPoint].location.z]
+            if distance(
+                [mouse[0], mouse[1], mouse[2]],
+                [nodes[len(nodes)-1][0], nodes[len(nodes)-1][1], nodes[len(nodes)-1][2]],
+                    False
+            ) >= distanceRate:
+                # add a new node if the control has moved the distance between two nodes
+                nodes.append([mouse[0], mouse[1], mouse[2]])
+                #Use "Pooling" to remove unused data to keep things fast
+                if len(nodes) > (len(objects)+1):
+                    del nodes[0]
+            #go through each object and move them
+            for x in range(0, len(objects)):
+                move(objects[x],CalcDist3D([mouse[0], mouse[1], mouse[2]],(len(nodes) - 1) - x), keyframefreq, x)
+            #go to the next frame
         bpy.context.scene.frame_current = bpy.context.scene.frame_current +1
         bpy.context.scene.frame_set(bpy.context.scene.frame_current)
 
@@ -275,6 +319,7 @@ class SNAKE_OT_Create(Operator):
     def execute(self, context):
         global nodes
         global objects
+        global distanceRate
         nodes = []
         objects = []
         #get settings
@@ -294,7 +339,9 @@ class SNAKE_OT_Create(Operator):
         for x in range(len(ctrlN)-1):
             init(ctrlN[(len(ctrlN)-2) - x])
         #BAKE
-        bake(keyframe_frequency_setting, 0)
+        #distanceRate = distanceRate / frame_subdivisions
+        bake(keyframe_frequency_setting, "frame_subdivisions")
+        self.report({'INFO'}, 'Animation complete')
         return {'FINISHED'}
 
 # Settings
@@ -308,16 +355,48 @@ class SnakeAnimSettings(PropertyGroup):
         max = 50
         )
     frame_subdivisions : IntProperty(
-        name = "Frame Subdivisions",
-        description = "Increase the acuracy of the animation if the snake moves more than the distance between the length of the bones in a single frame; will take longer",
+        name = "Keyframe Subdivisions",
+        description = "Increase the acuracy of the animation if the snake moves more than the distance between the length of the bones in a single frame - will double the amount of calculations each iteration",
         default = 1,
         step = 1,
         min = 1,
         max = 500
         )
+    frr : BoolProperty(
+        name = "Use Frame Range",
+        description = "Only run SnakeMotion durring a set frame range rather than from the start frame to the end",
+        default = True
+        )
+    cr : BoolProperty(
+        name = "Animated",
+        description = "Animate Calculation Switch",
+        default = False
+        )
+    running : BoolProperty(
+        name = "Is Running",
+        description = "Animate this value - Turns SnakeMotion on and off at specified frames",
+        default = True
+        )
+    fromm : IntProperty(
+        name = "From: ",
+        description = "Start frame",
+        default = 1,
+        step = 1,
+        min = -100,
+        max = 5000
+        )
+    to : IntProperty(
+        name = "To: ",
+        description = "End frame",
+        default = 2,
+        step = 1,
+        min = -100,
+        max = 5000
+        )
 #Classes
 classes = (
     SnakeMotionPT,
+    snakeCancel,
     SNAKE_OT_Create,
     SNAKE_OT_Setup,
     SNAKE_OT_Unhide,
