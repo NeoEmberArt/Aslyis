@@ -34,7 +34,10 @@ He has been brought back at the cost of nearly revealing where Frazor is. Enith 
 Almost nothing is known about what happens after the crixen is triggered, but one thing is certain: it may have consequences much larger than them all
 
 will any of them make it out alive?
-CRIXEN ALPHA: 
+
+
+CRIXEN ALPHA (Basic model):
+
 ![image](https://user-images.githubusercontent.com/78153143/166953376-576624e7-f36c-4ce6-81bf-698abd5d6115.png)
 
 > The plot progresses and gets better, but I won't provide any more spoilers ;)
