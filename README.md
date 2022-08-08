@@ -31,6 +31,8 @@ Chaddeth arrives at the labs a year later, unable to recall anything but the nam
 
 He has been brought back at the cost of nearly revealing where Frazor is. Enith takes advantage of this, as well as the creatures' fragility to lure Frazor out of hiding. Enith was able to run a MUCH larger version of crixen built to send Everyone on the plannet to a another universe by pulling the heart of Frazor out by pure force; the objective of doing this, Enith claims, is to bring back those who have been lost.
 
+Enith then reveals himself from behind his cloak to reveal a strange creature. It turns out he is one of the last two of the species called Sphora. Frazor is one of those but something about frazor is rather unique.
+
 Almost nothing is known about what happens after the crixen is triggered, but one thing is certain: it may have consequences much larger than them all
 
 will any of them make it out alive?
