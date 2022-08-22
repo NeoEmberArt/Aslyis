@@ -42,4 +42,4 @@ CRIXEN ALPHA (Basic model):
 
 ![image](https://user-images.githubusercontent.com/78153143/166953376-576624e7-f36c-4ce6-81bf-698abd5d6115.png)
 
-> The plot progresses and gets better, but I won't provide any more spoilers ;)
+> The plot progresses and gets even crazier, but I won't provide any more spoilers ;)
