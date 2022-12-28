@@ -7,6 +7,11 @@
 
 
 ***
+* [Chaddeth Dragonair](https://www.mediafire.com/file/hwvirzaehpce4fd/CharacterSets_Chaddeth.blend/file) **10.90MB**
+> [<img src="https://github.com/NeoEmberArt/Aslyis/blob/main/Characters/Icons/ChaddethNormal.png?raw=true" width="250"/>](https://www.mediafire.com/file/hwvirzaehpce4fd/CharacterSets_Chaddeth.blend/file)
+
+
+***
 * [Chaddeth Frazor Form](https://www.mediafire.com/file/ny4o4ykmsbziqmu/CharacterSets_Chaddeth_FrazorForm.blend/file) **3.68MB**
 > [<img src="https://github.com/NeoEmberArt/Aslyis/blob/main/Characters/Icons/ChaddethFrazor.png?raw=true" width="250"/>](https://www.mediafire.com/file/ny4o4ykmsbziqmu/CharacterSets_Chaddeth_FrazorForm.blend/file)
 
@@ -24,11 +29,6 @@
 ***
 * [Tyson Frazor Form](https://www.mediafire.com/file/9konz5sgdcjpvww/CharacterSets_Tyson_FrazorForm.blend/file) **5.32MB**
 > [<img src="https://github.com/NeoEmberArt/Aslyis/blob/main/Characters/Icons/TysonFrazor.png?raw=true" width="250"/>](https://www.mediafire.com/file/9konz5sgdcjpvww/CharacterSets_Tyson_FrazorForm.blend/file)
-
-
-***
-* [Chaddeth Dragonair](https://www.mediafire.com/file/hwvirzaehpce4fd/CharacterSets_Chaddeth.blend/file) **10.90MB**
-> [<img src="https://github.com/NeoEmberArt/Aslyis/blob/main/Characters/Icons/ChaddethNormal.png?raw=true" width="250"/>](https://www.mediafire.com/file/hwvirzaehpce4fd/CharacterSets_Chaddeth.blend/file)
 
 
 ***
