@@ -34,3 +34,7 @@
 ***
 * [Sphora (Experimental - Enith)](https://www.mediafire.com/file/qw1otbfa24on5qp/Sphora.blend/file) **54.62MB**
 > [<img src="https://github.com/NeoEmberArt/Aslyis/blob/main/Characters/Icons/Sphora.png?raw=true" width="250"/>](https://www.mediafire.com/file/qw1otbfa24on5qp/Sphora.blend/file)
+
+***
+* [Lunarian Soldier](https://www.mediafire.com/file/5lkx2dm570yrijo/Lunarian+Soldier.blend/file) **4.25MB** 
+> [<img src="https://github.com/NeoEmberArt/Aslyis/blob/main/Characters/Icons/LunarianSoldierWithKheronSword.png?raw=true" width="250"/>](https://www.mediafire.com/file/5lkx2dm570yrijo/Lunarian+Soldier.blend/file)
