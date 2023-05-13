@@ -24,9 +24,9 @@ Enith escapes after the crixen informs him that Frazor has done likewise. Enith 
 
 Enith's goal with this power is unclear, although it does have something to do with the crixen.
 
-Another was made by a person named Dorean. Dorean established multiple laboratories to investigate various topics, one of which being Distric 4, which experimented with a crixen variant. You might even claim that Dorean was collaborating with Enith.
+Another was made by a mysterious person named Dorean, who never existed until noe. Dorean established multiple laboratories to investigate various topics, one of which being Distric 4, which experimented with a crixen variant. You might even claim that Dorean was collaborating with Enith.
 
-Chaddeth, a Dragonair, was one of Frazor's eyes, but in a plan to destroy the crixen, it was unintentionally activated, ripping Chaddeth apart atom by atom. He was presumed to have been dead. The other two creatures involved in this plan were Basil (Buizel) and Tyson (Flygon) - they succeeded at the expense of losing Chaddeth, which Tyson feels guilty about.
+Chaddeth, a Dragonair, was one of Frazor's eyes, but in a plan to destroy the crixen, it was unintentionally activated, ripping Chaddeth apart. He was presumed to have been dead. The other two creatures involved in this plan were Basil (Buizel) and Tyson (Flygon) - they succeeded at the expense of losing Chaddeth, which Tyson feels guilty about.
 
 Tyson possesses Frazor's power, but he hates every second of possessing it.
 
