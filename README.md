@@ -18,25 +18,27 @@ The crixen is a strong electromagnetic gate that, via a controlled wormhole, pro
 
 This machine was built by two men, but it was "accidentally" triggered by one dubbed "Enith."
 
-It took 15 years for someone named "Frazor" to exploit the Crixen by entering what is known as "Zero Infinity." He was able to create an exit by doing so, but he did not come out the same; he was given a massive amount of power that was too much to contain, so he hid himself, placing a lot of his power in three random creatures to reduce the amount he emits; one of these creatures gave him eyes on the outside world, some might even say that it is possession due to the fact that frazor can take control of the creature at will
+The two creatures named Enith and Frazor enter anouther universe and after 15 years, frazor exploited the crixen by entering what is known as "Zero Infinity." He was able to create an exit by doing so, but he did not come out the same; he was given a massive amount of power that was too much to contain, so he hid himself, placing a lot of his power in three random creatures to reduce the amount he emits; one of these creatures gave him eyes on the outside world, some might even say that it is possession due to the fact that frazor can take control of the creature at will
 
-Enith escapes after the crixen informs him that Frazor has done likewise. Enith was completely different when he awoke; his mind had shattered and was placed back together, making him insane. He became power hungry and set out to find Frazor, killing anybody who stood in his way.
+Enith escapes after the crixen informs him that Frazor has done likewise. Enith attempts to find Frazor with the intent of harvesting hos power he calls the creator.
 
 Enith's goal with this power is unclear, although it does have something to do with the crixen.
 
-Another was made by a mysterious person named Dorean, who never existed until noe. Dorean established multiple laboratories to investigate various topics, one of which being Distric 4, which experimented with a crixen variant. You might even claim that Dorean was collaborating with Enith.
+Meanwhile in that same world
+
+Another crixen was made by a mysterious person named Dorean, who never existed until now. Dorean established multiple laboratories to investigate various topics, one of which being Distric 4, which experimented with a crixen variant. You might even claim that Dorean was collaborating with Enith.
 
 Chaddeth, a Dragonair, was one of Frazor's eyes, but in a plan to destroy the crixen, it was unintentionally activated, ripping Chaddeth apart. He was presumed to have been dead. The other two creatures involved in this plan were Basil (Buizel) and Tyson (Flygon) - they succeeded at the expense of losing Chaddeth, which Tyson feels guilty about.
 
-Tyson possesses Frazor's power, but he hates every second of possessing it.
+Tyson possesses Frazor's power, but he hates every second of possessing it. He claims himself as a soldier with the purpose only to hurt.
 
-Chaddeth arrives at the labs a year later, unable to recall anything but the name of the Buizel.
+Chaddeth somehow arrives at the labs a year later, unable to recall anything but the name of the Buizel.
 
-He has been brought back at the cost of nearly revealing where Frazor is. Enith takes advantage of this, as well as the creatures' fragility to lure Frazor out of hiding. Enith was able to run a MUCH larger version of crixen built to send Everyone on the plannet to a another universe by pulling the heart of Frazor out by pure force; the objective of doing this, Enith claims, is to bring back those who have been lost.
+Frazor reveals it was him. Chaddetb has been brought back at the cost of nearly revealing where Frazor is. Enith takes advantage of this, as well as the creatures' fragility to lure Frazor out of hiding. Enith was able to run a MUCH larger version of crixen built to send Everyone on the plannet to a another universe favricated by frazors power. The objective of doing this, Enith claims, is to bring back those who have been lost.
 
-Enith then reveals himself from behind his cloak to reveal a strange creature. It turns out he is one of the last two of the species called Sphora. Frazor is one of those but something about frazor is rather unique.
+Enith then reveals himself from behind his cloak to reveal a strange creature. It turns out he is one of the last two of the species called Sphora. Frazor is one of those but something about frazor is rather unique. He had obsorbed all the power from tbe original crixen and can destroy anouther universe by fabricating items into the one hes in. Thats why enith claims he is the creator but the truth is, he is the one able end it all.
 
-Almost nothing is known about what happens after the crixen is triggered, but one thing is certain: it may have consequences much larger than them all
+Almost nothing is known about what happens after the crixen is triggered or when a universe comlapsed, but one thing is certain: it may have consequences much larger than them all
 
 will any of them make it out alive?
 
