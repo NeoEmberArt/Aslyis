@@ -20,7 +20,7 @@ This machine was built by two men, but it was "accidentally" triggered by one du
 
 The two creatures named Enith and Frazor enter anouther universe and after 15 years, frazor exploited the crixen by entering what is known as "Zero Infinity." He was able to create an exit by doing so, but he did not come out the same; he was given a massive amount of power that was too much to contain, so he hid himself, placing a lot of his power in three random creatures to reduce the amount he emits; one of these creatures gave him eyes on the outside world, some might even say that it is possession due to the fact that frazor can take control of the creature at will
 
-Enith escapes after the crixen informs him that Frazor has done likewise. Enith attempts to find Frazor with the intent of harvesting hos power he calls the creator.
+Enith escapes after the crixen informs him that Frazor has done likewise. Enith attempts to find Frazor with the intent of harvesting this power he calls the creator.
 
 Enith's goal with this power is unclear, although it does have something to do with the crixen.
 
