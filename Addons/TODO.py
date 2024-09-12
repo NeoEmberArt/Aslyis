@@ -4,10 +4,10 @@ bl_info = {
     "version": (1, 0, 0),
     "blender": (4, 0, 0),
     "location": "3D View > Sidebar > To-Do List",
-    "warning": "Use Documentation button to go to firebase console",  # Leave empty or add warnings like "Beta version" if applicable
-    "doc_url": "https://console.firebase.google.com/u/0/",  # Link to documentation or GitHub
-    "tracker_url": "https://github.com/NeoEmberArt/Aslyis/issues?q=is%3Aissue+is%3Aopen",  # Link to issue tracker if needed
-    "support": "COMMUNITY",  # Can be 'OFFICIAL', 'COMMUNITY', or 'TESTING'
+    "warning": "Use Documentation button to go to firebase console",
+    "doc_url": "https://console.firebase.google.com/u/0/", 
+    "tracker_url": "https://github.com/NeoEmberArt/Aslyis/issues?q=is%3Aissue+is%3Aopen",
+    "support": "COMMUNITY", 
     "category": "3D View",
     "author": "NeoEmberArts"
 }
