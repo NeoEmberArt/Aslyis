@@ -6,7 +6,7 @@ bl_info = {
     "location": "3D View > Sidebar > To-Do List",
     "warning": "Use Documentation button to go to firebase console",  # Leave empty or add warnings like "Beta version" if applicable
     "doc_url": "https://console.firebase.google.com/u/0/",  # Link to documentation or GitHub
-    "tracker_url": "https://your-bug-tracker-url.com",  # Link to issue tracker if needed
+    "tracker_url": "https://github.com/NeoEmberArt/Aslyis/issues?q=is%3Aissue+is%3Aopen",  # Link to issue tracker if needed
     "support": "COMMUNITY",  # Can be 'OFFICIAL', 'COMMUNITY', or 'TESTING'
     "category": "3D View",
     "author": "NeoEmberArts"
