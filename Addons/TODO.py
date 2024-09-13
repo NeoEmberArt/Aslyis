@@ -32,7 +32,7 @@ tasks_cache = {}
 cache = {}
 cached = False
 # Firebase configuration
-DEFAULT_FIREBASE_URL = "https://neocomm-79cc3-default-rtdb.firebaseio.com/tasks.json"
+DEFAULT_FIREBASE_URL = "https://aaaaa.firebaseio.com/tasks.json"
 
 class TODOListAddonPreferences(bpy.types.AddonPreferences):
     bl_idname = __name__
