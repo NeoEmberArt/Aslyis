@@ -32,7 +32,7 @@ tasks_cache = {}
 cache = {}
 cached = False
 # Firebase configuration
-DEFAULT_FIREBASE_URL = "https://aaaaa.firebaseio.com/tasks.json"
+DEFAULT_FIREBASE_URL = "https://neocomm-79cc3-default-rtdb.firebaseio.com/tasks.json"
 
 class TODOListAddonPreferences(bpy.types.AddonPreferences):
     bl_idname = __name__
@@ -617,6 +617,7 @@ class TODOClaimTaskOperator(bpy.types.Operator):
 
     def execute(self, context):
         settings = context.scene.todo_list_settings
+        settings.current_task_id = -1  # Reset task view
         task_id = self.task_id
         global cached
         cached = False
@@ -634,6 +635,7 @@ class TODOCompleteTaskOperator(bpy.types.Operator):
 
     def execute(self, context):
         settings = context.scene.todo_list_settings
+        settings.current_task_id = -1  # Reset task view
         task_id = self.task_id
         global cached
         cached = False
